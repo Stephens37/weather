@@ -1,0 +1,87 @@
+body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+#frame {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#frame_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 2fr 2fr;
+}
+
+input {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+}
+
+#submit {
+  grid-column: 3;
+  grid-row: 1;
+  background-image: 'Magnifying_glass_icon.svg';
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+}
+
+
+
+#sky_temp_info {
+  grid-column: 1 / span 3;
+  grid-row: 2;
+}
+
+#sky_temp_grid {
+  grid-template-rows: repeat(3, 1fr);
+}
+
+#sky {
+  grid-row: 1;
+}
+
+#temp {
+  grid-row: 2;
+}
+
+#city {
+  grid-row: 3;
+}
+
+#humidity {
+  grid-column: 1;
+  grid-row: 3
+}
+
+#humidity_grid {
+  grid-template-rows: 2fr 1fr
+}
+
+#percent {
+  grid-row: 1;
+}
+
+#humidity_name {
+  grid-row: 2;
+}
+
+#wind {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+#wind_grid {
+  grid-template-rows: 2fr 1fr;
+}
+
+#speed {
+  grid-row: 1;
+}
+
+#wind_name {
+  grid-row: 2;
+}
